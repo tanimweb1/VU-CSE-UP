@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="bn">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Varendra University — CSE Class Routine (Summer 2025)</title>
+    <link rel="icon" href="./download (2).jfif" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="wrap">
+        <h1>Varendra University — CSE Class Routine</h1>
+        <p class="subtitle">
+          Select Semester, Day and Section → Click <strong>Search</strong>
+        </p>
+      </div>
+    </header>
+
+    <main class="wrap main">
+      <section class="controls">
+        <div class="control">
+          <label>Semester</label>
+          <select id="semesterSelect">
+            <option value="1">1st Semester (Summer 2025)</option>
+            <option value="2">2nd Semester</option>
+          </select>
+        </div>
+
+        <div class="control">
+          <label>Day</label>
+          <select id="daySelect">
+            <option value="Sunday">Sunday</option>
+            <option value="Monday">Monday</option>
+            <option value="Tuesday">Tuesday</option>
+            <option value="Wednesday">Wednesday</option>
+            <option value="Thursday">Thursday</option>
+          </select>
+        </div>
+
+        <div class="control">
+          <label>Section</label>
+          <select id="sectionSelect">
+            <option value="A">Section A</option>
+            <option value="B">Section B</option>
+            <option value="C">Section C</option>
+          </select>
+        </div>
+
+        <div class="buttons">
+          <button id="searchBtn" class="btn primary">Search</button>
+          <button id="nextDayBtn" class="btn secondary">Next Day</button>
+        </div>
+      </section>
+
+      <section id="resultArea" class="resultArea">
+        <div class="empty">
+          উপরে Semester, Day ও Section সিলেক্ট করে <strong>Search</strong> চাপুন
+          — এখানে ঐ দিনের পুরো রুটিন কার্ড আকারে দেখাবে।
+        </div>
+      </section>
+    </main>
+
+    <footer class="wrap footer">Designed by Shahriar Mahmud Tanim</footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
